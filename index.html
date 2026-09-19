@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tamagotchi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="pet-card">
+        <div class="header">
+          <h1>Mochi</h1>
+          <span id="stateBadge" class="badge">Feliz</span>
+        </div>
+
+        <div class="pet-wrapper">
+          <div id="petSprite" class="pet-sprite state-idle" aria-live="polite">
+            <div class="ear ear-left"></div>
+            <div class="ear ear-right"></div>
+            <div class="face">
+              <div class="eye eye-left"></div>
+              <div class="eye eye-right"></div>
+              <div class="nose"></div>
+              <div class="mouth"></div>
+            </div>
+          </div>
+          <div id="message" class="message">¡Estoy listo para jugar!</div>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <label>Hambre</label>
+            <div class="bar"><span id="hungerBar" style="width: 35%"></span></div>
+          </div>
+          <div class="stat">
+            <label>Felicidad</label>
+            <div class="bar"><span id="happinessBar" style="width: 70%"></span></div>
+          </div>
+          <div class="stat">
+            <label>Limpieza</label>
+            <div class="bar"><span id="hygieneBar" style="width: 65%"></span></div>
+          </div>
+          <div class="stat">
+            <label>Energía</label>
+            <div class="bar"><span id="energyBar" style="width: 75%"></span></div>
+          </div>
+          <div class="stat">
+            <label>Salud</label>
+            <div class="bar"><span id="healthBar" style="width: 100%"></span></div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button data-action="feed">Comer</button>
+          <button data-action="play">Jugar</button>
+          <button data-action="clean">Limpiar</button>
+          <button data-action="sleep">Dormir</button>
+          <button data-action="heal">Curar</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
